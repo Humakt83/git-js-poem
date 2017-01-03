@@ -1,0 +1,25 @@
+{
+  "name": "git-js-poem",
+  "version": "1.0.0",
+  "description": "A code poem written with js and utilizing git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Humakt83/git-js-poem.git"
+  },
+  "keywords": [
+    "poem",
+    "javascript",
+    "git"
+  ],
+  "author": "Humakt83",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Humakt83/git-js-poem/issues"
+  },
+  "homepage": "https://github.com/Humakt83/git-js-poem#readme",
+  "dependencies": {}
+}
