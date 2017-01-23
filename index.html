@@ -1,46 +1,7 @@
 <html>
 <head>
     <title>Code poem written with JavaScript</title>
-    <style>
-        body {
-            background-color: black;
-            padding: 0;
-            margin: 0;
-        }
-        #poem {
-            position: absolute;
-            left: 20%;
-            top: 15px;
-            width: 300px;
-            color: azure;
-            font-style: italic;
-            font-size: larger;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            z-index: 5;
-            background: black;
-            background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3), black, rgb(55, 55, 145));
-            background: -o-linear-gradient(left, rgba(0, 0, 0, 0.3), black, rgb(55, 55, 145));
-            background: linear-gradient(to right, rgba(0, 0, 0, 0.3), black, rgb(55, 55, 145));
-            border-radius: 0px 25px 25px 0px;
-            padding: 5px;
-            padding-left: 15px;
-        }
-        #background {
-            width: 100%;
-            opacity: 0;
-            min-height: 100%;
-        }
-        .shiningLight {
-            opacity: 1 !important;    
-            background: -webkit-linear-gradient(top left, azure, rgba(255,255, 210, 0.8), rgba(255,255, 210, 0.6), rgba(255,255, 210, 0.5), rgba(255,255, 210, 0.3), rgba(255,255, 210, 0.1), rgba(255,255, 210, 0.1), rgba(255,255, 210, 0));
-            background: -o-linear-gradient(top left, azure, rgba(255,255, 210, 0.8), rgba(255,255, 210, 0.6), rgba(255,255, 210, 0.5), rgba(255,255, 210, 0.3), rgba(255,255, 210, 0.1), rgba(255,255, 210, 0.1), rgba(255,255, 210, 0));
-            background: linear-gradient(to bottom right, azure, rgba(255,255, 210, 0.8), rgba(255,255, 210, 0.6), rgba(255,255, 210, 0.5), rgba(255,255, 210, 0.3), rgba(255,255, 210, 0.1), rgba(255,255, 210, 0.1), rgba(255,255, 210, 0));
-            -moz-transition: opacity 2s linear;
-            -webkit-transition: opacity 2s linear;
-            -o-transition: opacity 2s linear;
-            transition: opacity 2s linear;
-        }
-    </style>
+    <link rel="stylesheet" href="poem.css" />
     <script src="https://d3js.org/d3.v4.min.js"></script>    
 </head>
 <body>    
