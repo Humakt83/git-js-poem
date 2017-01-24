@@ -76,3 +76,54 @@ body {
     width: 100%;
     left: 0;
 }
+
+@keyframes swim {
+    0% {
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+    25% {
+        padding-left: 135px;
+    }
+    50% {
+        padding-top: 70px;
+        padding-left: 270px;
+    }
+    75% {
+        padding-top: 15px;
+        padding-left: 120px;
+    }
+    100% {
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+}
+
+.minnow {
+    z-index: 10;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    animation: swim 4s infinite linear;
+}
+
+.minnowBody {
+    width: 5px;
+    height: 5px;
+    border: 1px solid black;
+    border-radius: 15px;
+    position: absolute;
+}
+
+.minnowFin {
+    width: 0;
+    height: 0;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-right: 5px solid black;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    left: 6px;
+    top: -3px;
+}

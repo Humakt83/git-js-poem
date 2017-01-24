@@ -1,7 +1,8 @@
 var poemArray = [
     { poem: 'A vast ocean of darkness', transition: function() {} },
     { poem: 'A shining ligth', transition: shiningLight },
-    { poem: 'Illuminates the ocean below', transition: illuminateOcean}
+    { poem: 'Illuminates the ocean below', transition: illuminateOcean},
+    { poem: 'Where minnows swim', transition: minnowsSwim}
 ];
 
 initialize();
@@ -44,4 +45,19 @@ function illuminateOcean() {
             .style('left', positionLeftNegative);
         }
     }
+}
+
+function minnowsSwim() {
+    for (var i = 0; i < 15; i++) {
+        var minnow = d3.select('.illuminateOcean')
+            .append('div')
+            .attr('class', 'minnow');
+        minnow.style('left', Math.floor(Math.random() * 800));
+        minnow.style('top', Math.floor(Math.random() * 255));
+        minnow.append('div')
+        .attr('class', 'minnowBody')
+        .append('div')
+        .attr('class', 'minnowFin');
+    }
+
 }
